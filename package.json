@@ -1,0 +1,22 @@
+{
+  "name": "xenova-text-sentiment-analyzer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@xenova/transformers": "^2.17.2",
+    "express": "^4.19.2",
+    "http": "^0.0.1-security",
+    "sentiment": "^5.0.2",
+    "socket.io": "^4.7.5",
+    "transformers": "^3.1.0",
+    "upgrade": "^1.1.0"
+  }
+}

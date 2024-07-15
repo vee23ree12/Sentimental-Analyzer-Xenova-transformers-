@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer" 
+        />
+    <link rel="stylesheet" href="./public/bootswatch/bootstrap.min.css">
+    <link rel="stylesheet" href="./public/css/index.css">;
+    <title>Sentiment-Analyzer</title>
+</head>
+<body>
+    <div class="col-lg-6 col-10 mx-auto py-5">
+        <div class="card p-4">
+            <h1>Sentiment-Analyzer</h1>
+            <form id="form">
+                <input type="text" id="input" class="form-control form-control-lg mb-3" placeholder="Type one-liner text ...">
+                General Sentiments:
+                <b id="response" class="mt-2"></b> &nbsp; &nbsp;
+                Sentiment Score:
+                <b id="score" class="mt-2"></b> <br>
+                <!-- <input type="submit" class="btn btn-primary mt-2 mb-3" value="process">  -->
+            </form>
+
+            <div id="analysis-card" class="card p-4 mt-3">
+                <div class="d-flex justify-content-center mt-2">
+                    <i id="s-emote" class="fa-solid fa-hand-pointer" style="font-size: 5rem; transition: all 0.3s;"></i>
+                </div>
+                <b id="face-emote" class="d-flex justify-content-center mt-2"></b>
+            </div>
+        </div>
+    </div>
+
+    <script src="./public/js/index.js"></script>
+</body>
+</html>

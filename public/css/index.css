@@ -1,0 +1,12 @@
+
+#analysis-card.negative{
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+}
+
+#analysis-card.positive{
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+}
+
+#face-emote{
+    font-size: 2rem;
+}
