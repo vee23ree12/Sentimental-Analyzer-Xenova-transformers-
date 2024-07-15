@@ -16,7 +16,7 @@ const app = express(); //initialize the express instance
 app.use(express.json()); 
 
 //Middleware to make the public files available everywhere on the web page
-app.use('/public', express.static('./public'));
+app.use(express.static(path.join(__dirname, '..', 'public')));
 
 app.post('/', async(req,res) => {
     const result = await pipe(req.body.text);
@@ -25,7 +25,7 @@ app.post('/', async(req,res) => {
 
 //GET api to send the html file as response for http request
 app.get('/', (req,res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.sendFile(path.join(__dirname,'..','public','index.html'));
 });
 
 app.listen(3000, () => {
